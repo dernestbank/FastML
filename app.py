@@ -9,10 +9,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score 
 from sklearn.datasets import load_diabetes, load_boston # for sample datasets for testing purpose
-import matplotlib.pyplot as plt #for customizing 
-import seaborn as sns
-import base64
-import io
+import matplotlib.pyplot as plt #for customizing the plots
+import seaborn as sns # for creating the plots
+import base64 # for downloading the file
+import io # for downloading the file
 #---------------------------------#
 # Page layout
 ## Page expands to full width
