@@ -1,6 +1,4 @@
 # App inspiredby Data Professor
-# GitHub repo of this app 
-# Demo of this app https://share.streamlit.io/dataprofessor/ml-auto-app/main/app.py
 
 import streamlit as st
 import pandas as pd
@@ -8,7 +6,7 @@ from lazypredict.Supervised import LazyRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score 
-from sklearn.datasets import load_diabetes, load_boston # for sample datasets for testing purpose
+from sklearn.datasets import load_diabetes, load_breast_cancer,load_wine # for sample datasets for testing purpose
 import matplotlib.pyplot as plt #for customizing the plots
 import seaborn as sns # for creating the plots
 import base64 # for downloading the file
@@ -16,8 +14,11 @@ import io # for downloading the file
 #---------------------------------#
 # Page layout
 ## Page expands to full width
-st.set_page_config(page_title='Ernie\'s Machine Learning Algorithm Comparison App',
+st.set_page_config(page_title='Ernie\'s Easy Machine Learning Arena for Algorithms Comparison App',
     layout='wide')
+#importing my footer
+from footer import add_s2d2_footer
+
 #---------------------------------#
 # Model building
 def build_model(df):
@@ -26,10 +27,11 @@ def build_model(df):
     Y = df.iloc[:,-1] # Selecting the last column as Y
 
     st.markdown('**1.2. Dataset dimension**')
-    st.write('X')
-    st.info(X.shape)
-    st.write('Y')
-    st.info(Y.shape)
+    col1, col2 = st.columns(2)
+    col1.write('X')
+    col1.info(X.shape)
+    col2.write('Y')
+    col2.info(Y.shape)
 
     st.markdown('**1.3. Variable details**:')
     st.write('X variable (first 20 are shown)')
@@ -121,11 +123,10 @@ def imagedownload(plt, filename):
 
 #---------------------------------#
 st.write("""
-# The Machine Learning Algorithm Comparison App
+# Easy Machine Learning Arena. 
 
-In this implementation, the **lazypredict** library is used for building several machine learning models at once.
+The EasyML App implements the **lazypredict** library to test several machine learning models at once preoptimization. .
 
-Developed by: [Data Professor](http://youtube.com/dataprofessor)
 
 """)
 
@@ -167,7 +168,7 @@ else:
         #st.write(df.head(5))
 
         # Boston housing dataset
-        boston = load_boston()
+        boston = load_wine()
         #X = pd.DataFrame(boston.data, columns=boston.feature_names)
         #Y = pd.Series(boston.target, name='response')
         X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
@@ -178,3 +179,10 @@ else:
         st.write(df.head(5))
 
         build_model(df)
+
+
+
+
+
+#footer
+add_s2d2_footer()#---------------------------------#
