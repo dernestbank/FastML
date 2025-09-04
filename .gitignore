@@ -1,7 +1,15 @@
 env
+venv
 .env
 promts
 tasks
 plan
 lca_datasets-main
 lca_datasets-main(1).zip
+__pycache__
+.ipynb_checkpoints
+*.pyc
+.DS_Store
+.qodo
+.vscode
+.zip
