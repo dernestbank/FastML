@@ -1,4 +1,4 @@
-# EasyML-app
+# FastML-app
 
 This is a web app that uses the several libraies suchas lazypredict library to predict multiple machine learning models on a users data preoptimization. The goal is to fasttrack the ML piipeline with tools and libraries. 
 
@@ -7,7 +7,7 @@ This is a web app that uses the several libraies suchas lazypredict library to p
 
 Launch the web app:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dernestbank/easyml/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dernestbank/FastML/app.py)
 
 
 
@@ -28,7 +28,7 @@ conda activate lazypredict
 Download requirements.txt file
 
 ```
-wget https://github.com/dernestbank/EasyML/requirements.txt
+wget https://github.com/dernestbank/FastML/requirements.txt
 
 ```
 Pip install libraries
@@ -49,7 +49,7 @@ python app.py
 
 ###  Download and unzip contents from GitHub repo
 
-Download and unzip contents from https://github.com/dernestbank/EasyML
+Download and unzip contents from https://github.com/dernestbank/FastML
 
 ###  Launch the app
 
