@@ -1,7 +1,7 @@
-# ml-auto-app
+# EasyML-app
 
-This is a web app that uses the lazypredict library to predict the type of machine learning model to use for a given dataset.
-#not that lazypredict is not a machine learning model, it is a library that uses machine learning models to predict the type of machine learning model to use for a given dataset.
+This is a web app that uses the several libraies suchas lazypredict library to predict multiple machine learning models on a users data preoptimization. The goal is to fasttrack the ML piipeline with tools and libraries. 
+
 
 # Demo
 
@@ -28,10 +28,9 @@ conda activate lazypredict
 Download requirements.txt file
 
 ```
-wget https://github.com/dernestbank/EasyML/blob/main/requirements.txt
+wget https://github.com/dernestbank/EasyML/requirements.txt
 
 ```
-
 Pip install libraries
 ```
 pip install -r requirements.txt
@@ -50,7 +49,7 @@ python app.py
 
 ###  Download and unzip contents from GitHub repo
 
-Download and unzip contents from https://github.com/dernestbank/AutoML-App
+Download and unzip contents from https://github.com/dernestbank/EasyML
 
 ###  Launch the app
 
@@ -68,5 +67,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [lazypredict](https://github.com/shankarpandala/lazypredict)
 - [dataprofessor](https://github.com/dataprofessor)
 - [streamlit](https://github.com/streamlit/streamlit)
-- [streamlit-example](https://github.com/streamlit/streamlit-example)
-- [streamlit    ](https://github.com/streamlit/streamlit)
+- [pandas](https://github.com/pandas-dev/pandas)
+- [matplotlib](https://github.com/matplotlib/matplotlib)
+- [scikit-learn](https://github.com/scikit-learn/scikit-learn)  
