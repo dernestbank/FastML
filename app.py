@@ -135,7 +135,7 @@ The EasyML App implements the **lazypredict** library to test several machine le
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
+[Example CSV input file]()
 """)
 
 # Sidebar - Specify parameter settings
@@ -168,14 +168,14 @@ else:
         #st.write(df.head(5))
 
         # Boston housing dataset
-        boston = load_wine()
+        sampledata = load_wine()
         #X = pd.DataFrame(boston.data, columns=boston.feature_names)
         #Y = pd.Series(boston.target, name='response')
-        X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
-        Y = pd.Series(boston.target, name='response').loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        X = pd.DataFrame(sampledata.data, columns=sampledata.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        Y = pd.Series(sampledata.target, name='response').loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
         df = pd.concat( [X,Y], axis=1 )
 
-        st.markdown('The Boston housing dataset is used as the example.')
+        st.markdown('The wine dataset from sklearn is used as the example.')
         st.write(df.head(5))
 
         build_model(df)

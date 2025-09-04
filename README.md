@@ -7,7 +7,7 @@ This is a web app that uses the lazypredict library to predict the type of machi
 
 Launch the web app:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/ml-auto-app/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dernestbank/easyml/main/app.py)
 
 
 
@@ -15,11 +15,11 @@ Launch the web app:
 To recreate this web app on your own computer, do the following.
 
 ### Create conda environment
-Firstly, we will create a conda environment called *lazypredict*
+create a conda environment
 ```
 conda create -n lazypredict python=3.7.9
 ```
-Secondly, we will login to the *lazypredict* environment
+activate env
 ```
 conda activate lazypredict
 ```
@@ -28,7 +28,7 @@ conda activate lazypredict
 Download requirements.txt file
 
 ```
-wget https://github.com/dernestbank/AutoML-App/blob/main/requirements.txt
+wget https://github.com/dernestbank/EasyML/blob/main/requirements.txt
 
 ```
 
