@@ -14,42 +14,32 @@ Launch the web app:
 # Reproducing this web app
 To recreate this web app on your own computer, do the following.
 
-### Create conda environment
-create a conda environment
-```
-conda create -n lazypredict python=3.7.9
-```
-activate env
-```
-conda activate lazypredict
-```
-### Install prerequisite libraries
-
-Download requirements.txt file
-
-```
-wget https://github.com/dernestbank/FastML/requirements.txt
-
-```
-Pip install libraries
-```
-pip install -r requirements.txt
-```
-
-# Installation
-```
-pip install lazypredict
-```
-# Usage
-```
-python app.py
-```
-
 
 
 ###  Download and unzip contents from GitHub repo
 
 Download and unzip contents from https://github.com/dernestbank/FastML
+
+### change directory to the app directory
+```
+cd FastML-app
+```
+### Create conda environment
+create a conda environment
+```
+conda create -n fastml python=3.7.9
+```
+activate env
+```
+conda activate fastml
+```
+
+### Install libraries
+```
+pip install -r requirements.txt
+```
+
+
 
 ###  Launch the app
 
@@ -57,16 +47,26 @@ Download and unzip contents from https://github.com/dernestbank/FastML
 streamlit run app.py
 ```
 
+# Roadmap for FastML
+- [x]  One pager Multi-algorithm analysis
+- [x] Publish demo app
+- [ ] Add data manupulation ( column selection, data cleaning, data transformation, etc.)
+- [ ] Addd a feature engineering step to the pipeline.
+- [ ] Add a feature selection step to the 
+- [ ] Add a model selection, optimization and hyperparameter tuning to the pipteline pipeline.
+- [ ] Add a LLM feature
+
 # Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-# License
+
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
-# Author
+
+## Author
 [Dernest Bank](https://github.com/dernestbank)
-# Acknowledgements
+
+## Acknowledgements
 - [lazypredict](https://github.com/shankarpandala/lazypredict)
 - [dataprofessor](https://github.com/dataprofessor)
 - [streamlit](https://github.com/streamlit/streamlit)
-- [pandas](https://github.com/pandas-dev/pandas)
-- [matplotlib](https://github.com/matplotlib/matplotlib)
 - [scikit-learn](https://github.com/scikit-learn/scikit-learn)  
